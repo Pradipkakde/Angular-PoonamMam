@@ -1,9 +1,14 @@
-<p>databinding works!</p>
-{{city}}
-<input type="text" value="patil">
-<input type="text" [value]="myname1">
 
-<input type="text" value="{{myname1}}"><br>
-<input type="text" [disabled]="isDisable"><br>
-<input type="text" disabled="{{isDisable}}">  
+<h1>{{pagetitle}}</h1><br>
 
+<img class="img" src="{{imagePath}}"/>
+<button class="btn btn-primary" [disabled]="btnType">Click</button>
+<br>
+<h1>{{secTitle}}</h1>
+<img class="img" [src]="imagePath"/>
+<button class="btn btn-primary" disabled={{btnType}}>Click</button><br>
+<button class="btn btn-danger" (click)="changeTitle()">Clik Me to change Title</button>
+<!--Event Binding-->
+<div (click)="onDivClick()">    
+    <button (click)="onSave($event)">Save</button>  
+  </div>  
