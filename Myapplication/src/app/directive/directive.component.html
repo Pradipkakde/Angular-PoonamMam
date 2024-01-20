@@ -1,0 +1,36 @@
+<p>directive works!</p>
+<div class="nv" *ngIf=" showdiv "></div>
+<button (click)="toggle()">Toggle</button>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Juice</li>
+    <li>coldrinks</li>
+    <li>Bevrages</li>
+</ul>
+<ul>
+    <li>{{listItem}}</li>
+</ul>
+<ul>
+    <li *ngFor="let items of listItem">{{items}}</li>
+</ul>
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">i like {{color}}</p>
+    <p *ngSwitchCase="'pink'">i like {{color}}</p>
+    <p *ngSwitchCase="'yellow'">i like {{color}}</p>
+    <p *ngSwitchDefault>i dont like any color</p>
+
+</div>
+<div style="background-color: red; border:5px solid black;"> I am a Angular Devloper</div>
+
+
+<div [ngStyle]="{color :getcolor()}">I am a Angular Devloper</div>
+
+<div [class.div-container1]="journy==='admin'"
+[class.div-container2]="journy==='user'"
+[class.div-container3]="journy==='owner'"
+[class.div-container4]="journy==='client'">I like india</div>
+
+<div [class.bike-container1]="Bike==='platina'"
+[class.bike-container2]="Bike==='splendar'"
+[class.bike-container3]="Bike==='Startcity'"> I like sport Bike</div>
