@@ -1,0 +1,21 @@
+.form-container{
+    height: 320px;
+    width: 250px;
+    background-color: aqua;
+    border: 2px solid rgb(104, 4, 243);
+    margin:auto;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin-top: 20;
+
+}
+.error-msg{
+    color: red;
+}
+.Hedding{
+    font-style:normal;
+    font-weight: bold;
+    font: bold;
+}

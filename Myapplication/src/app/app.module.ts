@@ -1,21 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DatabindingComponent } from './databinding/databinding.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+
 import { DirectiveComponent } from './directive/directive.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TestComponent } from './test/test.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     DatabindingComponent,
-    DirectiveComponent
+   
+    DirectiveComponent,
+        TestComponent,
+        DemoComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

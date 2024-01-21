@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Myapplication';
+  title = 'myapplication';
+  form={
+    fname :'',
+    lname :'',
+    pan :'',
+    mobile:'',
+    email:'',
+    age:''
+  }
+  registerFn(){
+    console.log(this.form)
+  }
+
 }
