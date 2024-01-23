@@ -20,4 +20,5 @@ directivecomponent(){
 admin(){
   this.router.navigateByUrl('admin/adminlanding')
 }
+
 }

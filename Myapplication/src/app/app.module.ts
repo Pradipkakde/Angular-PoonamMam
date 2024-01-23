@@ -17,10 +17,10 @@ import { DemoComponent } from './demo/demo.component';
     AppComponent,
     HomeComponent,
     DatabindingComponent,
-   
     DirectiveComponent,
         TestComponent,
         DemoComponent,
+       
     
   ],
   imports: [

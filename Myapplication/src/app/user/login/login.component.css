@@ -1,6 +1,6 @@
 .form-container{
     height: 320px;
-    width: 250px;
+    width: 300px;
     background-color: aqua;
     border: 2px solid rgb(104, 4, 243);
     margin:auto;
@@ -8,7 +8,7 @@
     text-align: center;
     position: relative;
     top: 50px;
-    margin-top: 20;
+    margin-top:10;
 
 }
 .error-msg{

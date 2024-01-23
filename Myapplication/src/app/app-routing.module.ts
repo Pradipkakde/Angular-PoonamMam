@@ -12,8 +12,8 @@ const routes: Routes = [
   {path :"test", component:TestComponent},
   {path :"demo", component:DemoComponent},
   {path :"directive", component:DirectiveComponent},
+ 
   {path : 'user',loadChildren:()=>import('./user/user.module').then(m=>m.UserModule)},
-  {path : 'admin',loadChildren:()=>import('./admin/admin.module').then(mod=>mod.AdminModule)},
   
 ];
 
