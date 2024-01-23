@@ -6,6 +6,7 @@ import { TestComponent } from './test/test.component';
 import { DemoComponent } from './demo/demo.component';
 import { DirectiveComponent } from './directive/directive.component';
 
+
 const routes: Routes = [
   {path :"", component:HomeComponent},
   {path :"databinding", component:DatabindingComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path :"directive", component:DirectiveComponent},
  
   {path : 'user',loadChildren:()=>import('./user/user.module').then(m=>m.UserModule)},
-  
+ // {path:'from',loadChildren:()=>import('./form/form.module').then(r=>r.FormModule)}
 ];
 
 @NgModule({

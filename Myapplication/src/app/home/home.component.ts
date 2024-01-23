@@ -20,5 +20,8 @@ directivecomponent(){
 admin(){
   this.router.navigateByUrl('admin/adminlanding')
 }
+templatedrive(){
+  this.router.navigateByUrl('form/templatedriven')
+}
 
 }
