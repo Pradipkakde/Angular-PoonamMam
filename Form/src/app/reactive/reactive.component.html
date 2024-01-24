@@ -1,2 +1,52 @@
+<div class="container mt4">
+    <h1 class="text-center">Reactive form with validation in simplest way</h1>
+    <form [formgroup]="registerForm" (ngSubmit)="registerFn()">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="First Name" formControlName="fname" [ngClass]="{ errors : getControl('fname')?.errors && getControl('fname')?.touched}">
+            <div *ngIf="getControl('fname')?.errors && getControl('fname')?.touched">
+                <small class="text-danger" *ngIf="getControl('fname')?.errors?.['required']">First name is required</small>
+                <small class="text-danger" *ngIf="getControl('fname')?.errors?.['maxlength']">only 32 character is allowed</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="lname" class="form-label">last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last Name" formControlName="lname"  [ngClass]="{ errors : getControl('lname')?.errors && getControl('lname')?.touched}">
+            <div *ngIf="getControl('lname')?.errors && getControl('lname')?.touched">
+                <small class="text-danger" *ngIf="getControl('lname')?.errors?.['required']">last name is required</small>
+                <small class="text-danger" *ngIf="getControl('lname')?.errors?.['maxlength']">only 32 character is allowed</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="age" formControlName="age"  [ngClass]="{ errors : getControl('age')?.errors && getControl('age')?.touched}">
+            <div *ngIf="getControl('age')?.errors && getControl('age')?.touched">
+                <small class="text-danger" *ngIf="getControl('age')?.errors?.['required']">Age is required</small>
+                <small class="text-danger" *ngIf="getControl('age')?.errors?.['maxlength']|| getControl('age')?.errors.?.[minlength]">Age must be in between 18 year</small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="mobile" class="form-lable">Mobile</label>
+            <input type="text" class="form-control" id="mobile" placeholder="mobile" formControlName="mobile"  [ngClass]="{errors:getControl('mobile')?.errors && getControl('mobile')?.touched}">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Id</label>
+            <input type="email" class="form-control" id="email" placeholder="Email Id" formControlName="email"  [ngClass]="{errors: getControl('email')?.errors && getControl('email')?.touched}">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="password" formControlName="password" [ngClass]="{errors: getControl('password')?.errors && getControl('password')?.touched}">
+        </div>
+        
+        <div class="mb-3">
+            <label for="confirm_passwrod" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_passwrod" placeholder="confirm passwrod" formControlName="confirm_passwrod" [ngClass]="{errors: getControl('confirm_passwrod')?.errors && getControl('confirm_passwrod')?.touched}">
+        </div>
+        
+        <div class="mb-3">
+            <input type="submit" class="btn btn-success">
+        </div>
+    </form>
+</div>
 
 
