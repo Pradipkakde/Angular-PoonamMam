@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestComponent } from './test/test.component';
 import { DemoComponent } from './demo/demo.component';
 import { UserSuccessComponent } from './user-success/user-success.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { UserSuccessComponent } from './user-success/user-success.component';
         TestComponent,
         DemoComponent,
         UserSuccessComponent,
+        ParentComponent,
+        ChildComponent,
        
     
   ],
