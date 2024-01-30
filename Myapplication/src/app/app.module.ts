@@ -11,6 +11,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestComponent } from './test/test.component';
 import { DemoComponent } from './demo/demo.component';
+import { UserSuccessComponent } from './user-success/user-success.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DemoComponent } from './demo/demo.component';
     DirectiveComponent,
         TestComponent,
         DemoComponent,
+        UserSuccessComponent,
        
     
   ],

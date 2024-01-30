@@ -20,7 +20,7 @@
         <br>
         <label>Password</label><br>
         <input type="text" #pass="ngModel" ngModel name="password" required 
-        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$">
         <div *ngIf="pass.errors?.['required'] && pass?.touched" class="error-msg">
             password is Required   
         </div>
